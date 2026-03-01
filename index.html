@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="decorative">
+            <div class="logo-container">
+                <img src="images/odin-lined.png" alt="Logo" class="logo-img">
+                <h1 class="logo">
+                    ODIN
+                </h1>
+            </div>
+        </div>
+        <div class="content">
+           <div>
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. <br> Sign Up now to get started.
+                </p>
+                <p>
+                    You know what to do
+                </p>
+
+                <form action="post">
+                    <div>
+                        <p>Let's do this!</p>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div>
+                            <label for="user_pass">Password</label>
+                            <input type="password" name="user_pass" id="user_pass" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" autocomplete="new-password" required>
+                        </div>
+                        <div>
+                            <label for="confirm_pass">Confirm Password</label>
+                            <input type="password" name="confirm_pass" id="confirm_pass" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" autocomplete="new-password" required>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <p>Already have an account? <a href="/">Login</a></p>
+                </form>
+           </div>
+        </div>
+    </main>
+</body>
+</html>

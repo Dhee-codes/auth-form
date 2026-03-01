@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('fonts/norse.bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    --primary: #596D48;
+    --border: #E5E7EB;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font: inherit;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    min-height: 100dvh;
+}
+
+@media (max-width: 680px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.decorative {
+    width: 30%;
+    background-image: url('images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr auto 3fr;
+}
+
+@media (max-width: 680px) {
+    .decorative {
+        width: 100vw;
+        height: 20vh;
+    }
+}
+
+.logo-container {
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.logo-img {
+    width: 30px;
+}
+
+.logo {
+    font-family: 'Norse-Bold', sans-serif;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+.content > div {
+    max-width: 600px;
+}
