@@ -4,6 +4,10 @@ Sign-up forms built as part of [The Odin Project](https://www.theodinproject.com
 
 ![Sign Up Form Screenshot](./images/screenshot.png)
 
+### live Preview
+
+[Github Pages](https://dhee-codes.github.io/signup-form/)
+
 ---
 
 ## Tech Used
