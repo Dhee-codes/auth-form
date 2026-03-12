@@ -142,7 +142,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5.6rem;
-    row-gap: 1.6rem;
+    row-gap: 1rem;
     margin-top: 1.6rem;
 }
 
@@ -180,14 +180,20 @@ input.invalid {
 }
 
 .error {
-    display: none;
+    display: block;
     color: red;
     font-size: 0.8rem;
     margin-top: 0.4rem;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    min-height: 1em;
 }
 
 input.invalid ~ .error {
-    display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #strength {

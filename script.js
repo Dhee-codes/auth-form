@@ -109,6 +109,7 @@ Object.values(inputs).forEach((input) => {
   input.addEventListener("input", () => {
     clearError(input);
     if (input === inputs.password) passwordStrength();
+    if (inputs.confirmPassword.value) validate(inputs.confirmPassword);
   });
 });
 
